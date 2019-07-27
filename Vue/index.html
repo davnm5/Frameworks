@@ -1,0 +1,27 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vue</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <h1 class="formato"> Frases célebres por escritores</h1>
+
+
+    <div id="app">
+
+        <div class="row">
+            <div :id=escritor.id v-on:click="mostrar_frase(escritor.id)" class="col-md-15 col-xs-3"
+                v-for="(escritor,index) in escritores">
+                <h6 class="autor" :id=escritor.id+'_'+escritor.id > {{escritor.nombre}}</h6>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>

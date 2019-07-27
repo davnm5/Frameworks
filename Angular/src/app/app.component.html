@@ -1,0 +1,14 @@
+
+
+
+    <h1 class="formato"> Frases célebres por escritores</h1>
+
+    <div>
+        <div id="container"class="row">
+
+            <div id="{{escritor.id}}" class="col-md-15 col-xs-3" (click)="mostrar_frase(escritor.id)" *ngFor="let escritor of escritores">
+                <h6 class="autor" id="{{escritor.id}}_{{escritor.id}}"> {{escritor.nombre}}</h6>
+            </div>
+
+        </div>
+    </div>
